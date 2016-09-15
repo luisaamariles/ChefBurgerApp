@@ -5,6 +5,9 @@
         android:title="Mi Perfil"
         android:actionLayout="@layout/activity_main"
         />
-
+    <item android:id="@+id/menu1"
+        android:title="Menú"
+        android:actionLayout="@layout/activity_main"
+        />
 
 </menu>

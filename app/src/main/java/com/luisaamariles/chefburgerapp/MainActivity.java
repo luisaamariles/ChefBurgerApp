@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Email",Mail.toString());
                 startActivity(intent);
                 break;
+            case R.id.menu1:
+
+                break;
 
         }
         return super.onOptionsItemSelected(item);

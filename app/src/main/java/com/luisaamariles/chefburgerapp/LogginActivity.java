@@ -30,7 +30,7 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
         datos = (TextView) findViewById(R.id.datos);
         bAceptar = (Button) findViewById(R.id.bAceptar);
         bAceptar.setOnClickListener(this);
-        bAceptar.setEnabled(false);
+        //bAceptar.setEnabled(false);
         getSupportActionBar().hide();
         Bundle extras = getIntent().getExtras();
 
@@ -64,7 +64,7 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
     }
     public void handleOnClick(View view)
     {
-        bAceptar.setEnabled(true);
+        //bAceptar.setEnabled(true);
         switch(view.getId())
         {
             case R.id.registro:
