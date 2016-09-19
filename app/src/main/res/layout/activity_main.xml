@@ -16,7 +16,7 @@
      <TextView
         android:layout_width="match_parent"
         android:layout_height="130dp"
-        android:text="MADE WITH LOVE"
+        android:text="@string/portada"
         android:id="@+id/Portada"
         android:gravity="center"
         android:textSize="36sp"
@@ -27,12 +27,12 @@
      <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="MENÚ"
+        android:text="@string/Menu"
         android:id="@+id/Menu"
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        android:textColor="@color/darkgray"
+        android:textColor="@color/white"
         android:background="@color/gray"
         />
      <LinearLayout
@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:id="@+id/Hamburguesa"
-            android:text="Hamburguesas"
+            android:text="@string/Hamburguesa"
             android:gravity="center"
             android:textSize="18sp"
             android:textStyle="bold|italic"
@@ -66,7 +66,7 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:id="@+id/Papas"
-                android:text="Papas"
+                android:text="@string/Papas"
                 android:gravity="center"
                 android:textSize="19sp"
                 android:textStyle="bold|italic"
@@ -84,7 +84,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:id="@+id/Brownie"
-            android:text="Postres"
+            android:text="@string/Brownie"
             android:gravity="center"
             android:textSize="19sp"
             android:textStyle="bold|italic"
@@ -95,12 +95,12 @@
      <TextView
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:text="Ubicación"
+        android:text="@string/Ubicacion"
         android:id="@+id/Ubicacion"
         android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold|italic"
-        android:textColor="@color/darkgray"
+        android:textColor="@color/white"
         android:background="@color/gray"
         />
      <LinearLayout

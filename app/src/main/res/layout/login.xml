@@ -25,7 +25,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="USUARIO:"
+        android:text="@string/Name"
         android:id="@+id/Name"
         android:gravity="center"
         android:textSize="36sp"
@@ -45,7 +45,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CONTRASEÑA:"
+        android:text="@string/Pass"
         android:id="@+id/Pass"
         android:gravity="center"
         android:textSize="36sp"
@@ -71,14 +71,14 @@
     <Button
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:hint="ACEPTAR"
+        android:hint="@string/baceptar"
         android:id="@+id/bAceptar"
         android:textSize="20sp"/>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="REGISTRARME"
+        android:text="@string/registro"
         android:id="@+id/registro"
         android:gravity="center"
         android:textSize="20sp"

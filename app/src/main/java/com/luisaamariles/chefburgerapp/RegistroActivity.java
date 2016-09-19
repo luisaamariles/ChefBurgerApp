@@ -14,10 +14,11 @@ import android.widget.Toast;
 /**
  * Created by Luisa Maria Amariles on 05/09/2016.
  */
-public class RegistroActivity  extends AppCompatActivity {
+public class RegistroActivity  extends AppCompatActivity implements View.OnClickListener {
     EditText eName,ePass,eRPass,Email;
     TextView datos;
     String Pass,RPass;
+    Button bAceptar;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,16 +29,15 @@ public class RegistroActivity  extends AppCompatActivity {
         eRPass = (EditText) findViewById(R.id.eRPass);
         Email = (EditText) findViewById(R.id.eEmail);
         datos = (TextView) findViewById(R.id.datos);
-        Button Aceptar = (Button) findViewById(R.id.bAceptar);
         Button Cancelar = (Button) findViewById(R.id.bCancelar);
-        Aceptar.setOnClickListener(onClickListener);
-        Cancelar.setOnClickListener(onClickListener);
+        bAceptar = (Button) findViewById(R.id.bAceptar);
+        bAceptar.setOnClickListener(this);
+        Cancelar.setOnClickListener(this);
         getSupportActionBar().hide();
         //Bundle extras = getIntent().getExtras();
 
     }
-    private OnClickListener onClickListener = new OnClickListener() {
-        @Override
+
         public void onClick(View v) {
             switch(v.getId()){
                 case R.id.bAceptar:
@@ -48,7 +48,8 @@ public class RegistroActivity  extends AppCompatActivity {
                     String vacio4= Email.getText().toString();
 
                     if (vacio1.equals("") || vacio2.equals("") || vacio3.equals("") || vacio4.equals("")) {
-                        datos.setText("Campos vacios");
+                        Toast.makeText(this,"Campos vacios",Toast.LENGTH_SHORT).show();
+                        //datos.setText("Campos vacios");
                     }else{
                         Pass= ePass.getText().toString();
                         RPass= eRPass.getText().toString();
@@ -62,7 +63,8 @@ public class RegistroActivity  extends AppCompatActivity {
                             setResult(RESULT_OK, intent);
                             finish();
                         }else{
-                            datos.setText("Las contraseñas no coinciden!");
+                            Toast.makeText(this,"Las contraseñas no coinciden!",Toast.LENGTH_SHORT).show();
+                           // datos.setText("Las contraseñas no coinciden!");
                             ePass.setText("");
                             eRPass.setText("");
                         }
@@ -78,5 +80,5 @@ public class RegistroActivity  extends AppCompatActivity {
             }
 
         }
-    };
+
 }

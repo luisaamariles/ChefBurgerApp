@@ -2,12 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     >
     <item android:id="@+id/miperfil"
-        android:title="Mi Perfil"
+        android:title="@string/miperfil"
         android:actionLayout="@layout/activity_main"
         />
     <item android:id="@+id/menu1"
-        android:title="Menú"
-        android:actionLayout="@layout/activity_main"
+        android:title="@string/menu"
+        android:actionLayout="@layout/menu_activity"
         />
 
 </menu>

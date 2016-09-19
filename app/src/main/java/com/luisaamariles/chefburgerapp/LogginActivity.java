@@ -47,7 +47,8 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
         String vacio1= Name.getText().toString();
         String vacio2= Pass.getText().toString();
         if (vacio1.equals("") || vacio2.equals("")) {
-            datos.setText("Campos vacios");
+            Toast.makeText(this,"Campos Vacios",Toast.LENGTH_SHORT).show();
+            //datos.setText("Campos vacios");
         }else{
             if(vacio1.equals(Nombre)&& vacio2.equals(Contrasena)) {
                 Intent intent = new Intent(this, MainActivity.class);
@@ -57,7 +58,8 @@ public class LogginActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
 
             }else{
-                datos.setText("Registrese!");
+                Toast.makeText(this,"Registrese!",Toast.LENGTH_SHORT).show();
+                //datos.setText("Registrese!");
             }
 
         }

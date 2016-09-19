@@ -1,8 +1,11 @@
 package com.luisaamariles.chefburgerapp;
 
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -42,7 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.menu1:
-
+                Intent intent2 = new Intent(this, MenuActivity.class);
+                intent2.putExtra("Name",Nombre.toString());
+                intent2.putExtra("Pass",Contrasena.toString());
+                intent2.putExtra("Email",Mail.toString());
+                startActivity(intent2);
                 break;
 
         }
